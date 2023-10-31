@@ -27,7 +27,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/hasura/jvm-gdc-ir")
+            url = uri("https://maven.pkg.github.com/hasura/jvm-ndc-ir")
             credentials {
                 username = project.findProperty("gpr.user") as String? ?: System.getenv("GH_USERNAME")
                 password = project.findProperty("gpr.key") as String? ?: System.getenv("GH_TOKEN")
