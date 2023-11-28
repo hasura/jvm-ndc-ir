@@ -34,7 +34,6 @@ sealed interface Argument {
 data class Relationship (
     val column_mapping: Map<String, String>,
     val relationship_type: RelationshipType,
-    val source_collection_or_type: String,
     val target_collection: String,
     val arguments: Map<String, Argument>
 )
