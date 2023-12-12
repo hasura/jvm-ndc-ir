@@ -1,5 +1,6 @@
 package ndc.config
 
+import NativeQueryInfo
 import com.fasterxml.jackson.annotation.JsonTypeInfo
 import ndc.ir.SchemaResponse
 
@@ -13,6 +14,7 @@ open class Configuration {
         functions = emptyList(),
         procedures = emptyList()
     )
+    open val nativeQueries: Map<String, NativeQueryInfo> = emptyMap()
 }
 
 typealias RawConfiguration = Configuration

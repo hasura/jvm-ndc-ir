@@ -1,5 +1,6 @@
 package ndc.ir
 
+import com.fasterxml.jackson.annotation.JsonProperty
 import com.fasterxml.jackson.annotation.JsonTypeInfo
 import com.fasterxml.jackson.annotation.JsonTypeName
 
@@ -41,6 +42,7 @@ sealed interface Type {
 
 data class ArgumentInfo (
     val description: String? = null,
+    @JsonProperty("type")
     val argument_type: Type
 )
 
