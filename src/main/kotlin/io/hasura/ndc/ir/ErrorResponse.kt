@@ -1,4 +1,4 @@
-package ndc.ir
+package io.hasura.ndc.ir
 
 data class ErrorResponse(
     val type: String = "uncaught-error",

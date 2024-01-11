@@ -1,4 +1,4 @@
-package ndc.ir
+package io.hasura.ndc.ir
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import java.nio.file.Files

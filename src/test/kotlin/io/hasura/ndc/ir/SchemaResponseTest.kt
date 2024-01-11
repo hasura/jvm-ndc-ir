@@ -1,4 +1,4 @@
-package ndc.ir
+package io.hasura.ndc.ir
 
 import org.junit.jupiter.api.Assertions.*
 

@@ -1,8 +1,10 @@
+package io.hasura.ndc.common
+
 import com.fasterxml.jackson.annotation.JsonCreator
 import com.fasterxml.jackson.annotation.JsonTypeInfo
 import com.fasterxml.jackson.annotation.JsonTypeName
-import ndc.ir.ArgumentInfo
-import ndc.ir.Type
+import io.hasura.ndc.ir.ArgumentInfo
+import io.hasura.ndc.ir.Type
 
 
 data class NativeQueryInfo(

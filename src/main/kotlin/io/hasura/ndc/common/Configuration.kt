@@ -1,8 +1,8 @@
-package ndc.config
+package io.hasura.ndc.common
 
-import NativeQueryInfo
 import com.fasterxml.jackson.annotation.JsonTypeInfo
-import ndc.ir.SchemaResponse
+import io.hasura.ndc.common.NativeQueryInfo
+import io.hasura.ndc.ir.SchemaResponse
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
 open class Configuration {

@@ -1,5 +1,4 @@
-package ndc.ir
-
+package io.hasura.ndc.common
 
 enum class NDCScalar {
     INT,
