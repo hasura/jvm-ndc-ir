@@ -1,7 +1,6 @@
 package io.hasura.ndc.common
 
 import com.fasterxml.jackson.annotation.JsonTypeInfo
-import io.hasura.ndc.common.NativeQueryInfo
 import io.hasura.ndc.ir.SchemaResponse
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
