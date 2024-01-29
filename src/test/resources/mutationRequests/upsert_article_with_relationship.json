@@ -43,7 +43,6 @@
         "author_id": "id"
       },
       "relationship_type": "object",
-      "source_collection_or_type": "article",
       "target_collection": "authors"
     }
   }
