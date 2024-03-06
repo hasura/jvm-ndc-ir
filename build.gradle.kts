@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "io.hasura"
-version = "1.0.0"
+version = "2.0.1"
 
 repositories {
     mavenCentral()
@@ -14,8 +14,6 @@ repositories {
 dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.2")
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.10.0")
-
-
 }
 
 java {
@@ -23,7 +21,6 @@ java {
 }
 
 publishing {
-
     repositories {
         maven {
             name = "GitHubPackages"

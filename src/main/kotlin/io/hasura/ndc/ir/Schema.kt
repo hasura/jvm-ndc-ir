@@ -16,7 +16,6 @@ data class SchemaResponse (
 data class ScalarType (
     val aggregate_functions: Map<String, AggregateFunctionDefinition>,
     val comparison_operators: Map<String, ComparisonOperatorDefinition>,
-    val update_operators: Map<String, UpdateOperatorDefinition>,
 )
 
 data class ObjectType (
@@ -29,6 +28,16 @@ data class ObjectField (
     val arguments: Map<String, ArgumentInfo>,
     val type: Type
 )
+
+@JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
+sealed interface ComparisonOperatorDefinition {
+    @JsonTypeName("equal")
+    object Equal : ComparisonOperatorDefinition
+    @JsonTypeName("in")
+    object In : ComparisonOperatorDefinition
+    @JsonTypeName("custom")
+    data class Custom(val argument_type: Type) : ComparisonOperatorDefinition
+}
 
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, property = "type")
 sealed interface Type {
@@ -51,10 +60,6 @@ data class ProcedureInfo (
     val description: String? = null,
     val arguments: Map<String, ArgumentInfo>,
     val result_type: Type,
-)
-
-data class ComparisonOperatorDefinition (
-    val argument_type: Type
 )
 
 data class AggregateFunctionDefinition (
