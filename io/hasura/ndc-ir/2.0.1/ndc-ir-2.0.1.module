@@ -1,0 +1,93 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.hasura",
+    "module": "ndc-ir",
+    "version": "2.0.1",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "ndc-ir-2.0.1.jar",
+          "url": "ndc-ir-2.0.1.jar",
+          "size": 155687,
+          "sha512": "4b1624cb8da5f00c7d8e9aaae5c1d4bcd52e4b5bb1fefb3727accd2e893ab1f349a20dac80edb3180b69e2ea005e9b89f19024d0ea84bae2e16ed8b4e0281a76",
+          "sha256": "f00ffc9c244ce0fe1389ca217309bef682b5aa852edb73ac60275068edc1941b",
+          "sha1": "dd069bbf23db270ce9a1f4b8b8ba63a705122bc6",
+          "md5": "63e6ef09c99807561d7603a8bdea4e1d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-kotlin",
+          "version": {
+            "requires": "2.15.2"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ndc-ir-2.0.1.jar",
+          "url": "ndc-ir-2.0.1.jar",
+          "size": 155687,
+          "sha512": "4b1624cb8da5f00c7d8e9aaae5c1d4bcd52e4b5bb1fefb3727accd2e893ab1f349a20dac80edb3180b69e2ea005e9b89f19024d0ea84bae2e16ed8b4e0281a76",
+          "sha256": "f00ffc9c244ce0fe1389ca217309bef682b5aa852edb73ac60275068edc1941b",
+          "sha1": "dd069bbf23db270ce9a1f4b8b8ba63a705122bc6",
+          "md5": "63e6ef09c99807561d7603a8bdea4e1d"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "ndc-ir-2.0.1-sources.jar",
+          "url": "ndc-ir-2.0.1-sources.jar",
+          "size": 7381,
+          "sha512": "4857478181f8bc0b80dff8825b15b2a7df329ca4c83b199ca570ecaeb79ec0491351ce967a9259f43dee9357515235e9e166fca39ca60e229115a0fe50ae9d02",
+          "sha256": "6d3ebe58d772d4911a29a8c093fbd03ba89d26e668a50a3a81e3df2c03282ad7",
+          "sha1": "149e780dcd0fdac9481e6725c14f42f64858b072",
+          "md5": "33b6636bbbf4e616302e14196b2a220c"
+        }
+      ]
+    }
+  ]
+}
